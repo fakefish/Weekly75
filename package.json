@@ -1,0 +1,41 @@
+{
+  "name": "Weekly75",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-native": "^0.22.0",
+    "react-native-code-push": "^1.7.3-beta",
+    "react-native-device-info": "^0.8.1",
+    "react-native-search-bar": "^2.8.0",
+    "react-native-tabbar-navigator": "https://github.com/fakefish/react-native-tabbar-navigator.git",
+    "react-native-wechat": "^1.3.0",
+    "react-redux": "^4.4.1",
+    "redux": "^3.1.6",
+    "redux-thunk": "^2.0.1"
+  },
+  "jest": {
+    "scriptPreprocessor": "node_modules/react-native/jestSupport/preprocessor.js",
+    "setupEnvScriptFile": "node_modules/react-native/jestSupport/env.js",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "packager/react-packager/src/Activity/"
+    ],
+    "testFileExtensions": [
+      "js"
+    ],
+    "unmockedModulePathPatterns": [
+      "promise",
+      "source-map"
+    ]
+  },
+  "devDependencies": {
+    "babel-jest": "^11.0.0",
+    "jest-cli": "^11.0.0",
+    "react-shallow-testutils": "^1.0.0"
+  }
+}
